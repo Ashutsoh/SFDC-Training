@@ -1,0 +1,10 @@
+<apex:page >
+<apex:form >
+<h1>please fill the following details</h1><br></br>
+    <apex:outputLabel value="Enter Name" for="name"></apex:outputLabel>
+    <apex:inputtext id="name"/><br></br>
+    <apex:outputLabel value="Enter password" for="pass"></apex:outputLabel>
+    <apex:inputsecret id="pass"/><br></br>
+    
+</apex:form>
+</apex:page>

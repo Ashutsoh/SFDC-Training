@@ -1,0 +1,5 @@
+<apex:page >
+    <apex:pageBlock >
+        <apex:pagemessage summary="validation message appeares" severity="error" strength="2"></apex:pagemessage>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,40 @@
+<apex:page standardController="Job_Ashutosh__c">
+    <apex:stylesheet value="{!URLFOR($Resource.jobcss,'cssonjob.css')}"/>
+    <apex:includeScript value="{!$Resource.jobjavascript}"/>
+    
+    <apex:form id="form"> 
+        <div class="outerdiv">
+            <apex:pageBlock mode="edit" id="pb">
+                <!-- add block section color-->
+                <apex:pageBlockSection title="Job Wizard" >
+                </apex:pageBlockSection>
+                <div align="center">
+                    <apex:image url="{!URLFOR($Resource.maya,'/image/img1.png'
+                                     )}" width="200" height="60"/>
+                </div>
+                
+                <apex:pageBlockSection id="pbs1" columns="2">
+                    
+                    <apex:inputField value="{!Job_Ashutosh__c.Name}" id="nameid"/>
+                    <apex:inputField value="{!Job_Ashutosh__c.Manager__c}"  id="managerid"/>
+                    <apex:inputField value="{!Job_Ashutosh__c.Job_Type__c}"   id="jobtypeid"/>
+                    <apex:inputField value="{!Job_Ashutosh__c.Description__c}"  id="descriptionid"/>
+                    <apex:inputField value="{!Job_Ashutosh__c.No_Of_Position__c}"  id="noofpositionid"/>
+                    <apex:inputField value="{!Job_Ashutosh__c.Expires_On__c}"  id="lastdateid"/>
+                    
+                    <div align="center">
+                        <apex:commandButton value="Save&Next"  action="{!save}"
+                                            onclick="helloWorld(
+                                                  
+                                                     '{!$Component.form.pb.pbs1.nameid}',
+                                                     '{!$Component.form.pb.pbs1.managerid}',
+                                                     '{!$Component.form.pb.pbs1.jobtypeid}',
+                                                     '{!$Component.form.pb.pbs1.descriptionid}',
+                                                     '{!$Component.form.pb.pbs1.noofpositionid}',
+                                                     '{!$Component.form.pb.pbs1.lastdateid}')" />
+                    </div>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </div>       
+    </apex:form>
+</apex:page>

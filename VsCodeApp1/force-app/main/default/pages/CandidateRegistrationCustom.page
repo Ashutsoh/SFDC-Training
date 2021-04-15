@@ -1,0 +1,45 @@
+<apex:page controller="CandidateCustomeController" sidebar="false">
+    <apex:stylesheet value="{!URLFOR($Resource.jobcss,'cssonjob.css')}"/>
+    <apex:includeScript value="{!$Resource.candidatejs}"/>
+    
+<apex:form id="form">
+    <apex:pageBlock title="mypageblock" mode="edit" id="pb">
+        <div align="center">
+            <apex:image url="{!URLFOR($Resource.maya,'/image/img1.png'
+                                     )}" width="200" height="60"/>
+            </div>
+        <apex:pageBlockSection title="Edit Page" columns="1" id="pbs">
+     
+            <apex:inputfield value="{!candidate.Name}" id="nameid"/>
+            <apex:inputField value="{!candidate.Salutation__c}" id="salutaionid"/>
+            <apex:inputField value="{!candidate.First_Name__c}" id="firstid"/>
+            <apex:inputField value="{!candidate.Last_Name__c}" id="lastid"/>
+            <apex:inputField value="{!candidate.Full_Name__c}" id="fullnameid"/>
+            <apex:inputField value="{!candidate.Date_Of_Birth__c}" id="dobid"/>
+            <apex:inputField value="{!candidate.Email__c}" id="mailid"/>
+            <apex:inputField value="{!candidate.Country__c}" id="countryid"/>
+            <apex:inputField value="{!candidate.State__c}" id="stateid"/>
+            <apex:inputField value="{!candidate.Application_Date__c}" id="applicationid"/>
+            <apex:inputField value="{!candidate.Status__c}" id="statusid"/>
+            <apex:inputField value="{!candidate.Expected_Salary__c  }" id="salaryid"/>
+            <apex:inputField value="{!candidate.Name__c}" id="jobid"/>
+			<div align="center">
+                <apex:commandButton value="Save&Next" action="{!savecnd}" onclick="candidateValidation(
+                                                     '{!$Component.form.pb.pbs.nameid}',
+                                                     '{!$Component.form.pb.pbs.salutaionid}',
+                                                     '{!$Component.form.pb.pbs.firstid}',
+                                                     '{!$Component.form.pb.pbs.lastid}',
+                                                     '{!$Component.form.pb.pbs.fullnameid}',
+                                                     '{!$Component.form.pb.pbs.dobid}',
+                                    				 '{!$Component.form.pb.pbs.mailid}',
+                                                     '{!$Component.form.pb.pbs.countryid}',
+                                                     '{!$Component.form.pb.pbs.stateid}',
+                                                     '{!$Component.form.pb.pbs.applicationid}',
+                                                     '{!$Component.form.pb.pbs.statusid}',
+                                                     '{!$Component.form.pb.pbs.salaryid}',
+                                                     '{!$Component.form.pb.pbs.jobid}')" />  
+                    </div>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

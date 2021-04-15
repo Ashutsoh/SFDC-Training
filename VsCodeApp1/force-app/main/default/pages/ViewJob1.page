@@ -1,0 +1,33 @@
+<apex:page controller="AccountVFController">
+    <apex:form >
+    <apex:pageBlock title="Job Details">
+      
+    <c:RelatedListComponent records="{!records}" fields="{!fields}" >
+    </c:RelatedListComponent>
+     <apex:pageBlockTable value="{!candidateRecords}" var="detail">
+            <apex:column >
+             <apex:facet name="header">First Name</apex:facet>
+             <apex:outputText value="{!detail.First_Name__c}"/>
+         </apex:column>
+              <apex:column >
+             <apex:facet name="header">Last Name</apex:facet>
+             <apex:outputText value="{!detail.Last_Name__c}"/>
+         </apex:column>
+         <apex:column >
+             <apex:facet name="header">Email</apex:facet>
+             <apex:outputText value="{!detail.Email__c}"/>
+         </apex:column>
+          <apex:column >
+             <apex:facet name="header">Status</apex:facet>
+             <apex:outputText value="{!detail.Status__c}"/>
+         </apex:column>
+          <apex:column >
+             <apex:facet name="header">Job Name</apex:facet>
+             <apex:outputText value="{!detail.Name__c}"/>
+         </apex:column>
+         
+          </apex:pageBlockTable>
+     
+    </apex:pageBlock>
+      </apex:form>      
+</apex:page>

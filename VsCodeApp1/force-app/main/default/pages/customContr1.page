@@ -1,0 +1,14 @@
+<apex:page controller="cstNewEdit" sidebar="false">
+<apex:form >
+    <apex:pageblock >
+        <apex:pageblocksection columns="1">
+            <apex:inputfield value="{!account.name}"/>
+            <apex:inputfield value="{!account.phone}"/>
+            <apex:inputfield value="{!account.industry}"/>
+        </apex:pageblocksection>
+        <apex:pageblockButtons >
+            <apex:commandButton value="save" action="{!savecst}"/>
+        </apex:pageblockButtons>
+    </apex:pageblock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,8 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations Hello world</h1>
+  <apex:pageBlock >
+  </apex:pageBlock>
+  This is your new Page: apexageExample
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

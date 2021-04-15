@@ -1,0 +1,6 @@
+<apex:page >
+    <apex:panelbar >
+        <apex:panelBarItem label="panel item1">Item1</apex:panelBarItem>
+        <apex:panelbarItem label="panel item2">Item2</apex:panelbarItem>
+    </apex:panelbar>
+</apex:page>

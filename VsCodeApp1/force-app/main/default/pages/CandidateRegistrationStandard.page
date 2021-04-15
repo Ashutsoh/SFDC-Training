@@ -1,0 +1,25 @@
+<apex:page standardController="Candidate_Ashutosh__c">
+<apex:form >
+    <apex:pageBlock title="mypageblock" mode="edit">
+        <apex:pageBlockButtons >
+            <apex:commandButton value="save the record" action="{!save}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection title="Edit Page" columns="1">
+            <apex:inputfield value="{!Candidate_Ashutosh__c.Name}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Salutation__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.First_Name__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Last_Name__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Full_Name__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Date_Of_Birth__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Email__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Country__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.State__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Application_Date__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Status__c}"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Expected_Salary__c  }"/>
+            <apex:inputField value="{!Candidate_Ashutosh__c.Name__c}"/>
+
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

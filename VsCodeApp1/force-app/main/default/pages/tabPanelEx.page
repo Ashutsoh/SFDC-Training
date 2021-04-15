@@ -1,0 +1,6 @@
+<apex:page >
+    <apex:tabpanel switchType="client">
+        <apex:tab label="tab1" name="tabone" id="thetab1" >This is tab one containt</apex:tab>
+        <apex:tab label="ta2" name="tabtwo" id="thetab2" >This is tab two containt</apex:tab>
+    </apex:tabpanel>
+</apex:page>
